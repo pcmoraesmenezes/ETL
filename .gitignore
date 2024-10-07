@@ -2,3 +2,6 @@
 .env
 key.json
 data/
+automatize_process
+automatize_process.spec
+automatize_process2
