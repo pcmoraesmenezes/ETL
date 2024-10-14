@@ -33,3 +33,37 @@ Very usefull to **big data** and **data science**.
 ---
 
 This type of architeture is designed to `Transaction Processing` and `Data Integrity`.
+
+## ACID Properties
+
+The ACID properties are a set of properties that guarantee that database transactions are processed reliably. The ACID properties are:
+
+- **Atomicity**
+
+- **Consistency**
+
+- **Isolation**
+
+- **Durability**
+
+### Atomicity
+
+If one of the operations fails, the entire transaction is rolled back. This ensures that the database is always in a consistent state.
+
+This structure follows the commit and rollback operations. If the transaction is successful, the changes are committed to the database. If the transaction fails, the changes are rolled back.
+
+### Consistency
+
+Consistency rule is that the database must always be in a consistent state. For example if a row that contains a foreign key is deleted, the database will not allow the deletion of the row that contains the primary key. 
+
+This can be changed by the use of `CASCADE` or `SET NULL` in the foreign key.
+
+### Isolation
+
+Isolation rule is that the database must be isolated from other transactions. This means that the database must be able to handle multiple transactions at the same time without interfering with each other.
+
+### Durability
+
+Durability rule is that the database must be able to recover from a failure. This means that the database must be able to recover from a failure and return to a consistent state.
+
+If a transaction is done, the changes are permanent and will not be lost.
